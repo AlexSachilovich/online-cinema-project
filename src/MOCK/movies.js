@@ -2,7 +2,7 @@ const generateMovies = (qty) => {
   return new Array(qty).fill(null).map((_, index) => ({
     id: index,
     title: `Movie ${index}`,
-    rating: "movie2.jpg",
+    rating: Math.ceil(Math.random(index) * 5),
     poster: `movie${index + 1}.jpg`,
     comments: [
       {
@@ -13,4 +13,4 @@ const generateMovies = (qty) => {
   }));
 };
 
-export const MOVIES = generateMovies(18);
+export const MOVIES = generateMovies(18)

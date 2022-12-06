@@ -1,2 +1,2 @@
-export * from "./Header";
-export * from "./movieCard";
+export * from './organisms'
+export * from './pages'
